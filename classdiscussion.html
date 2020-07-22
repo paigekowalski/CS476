@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Class Discussion</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>    
+    #footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+	  position: absolute;
+	  bottom: 0;
+	  width: 100%;
+	  height: 60px;
+    }
+	
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#container{
+		min-height: 100%;
+		position: relative;
+	}
+	
+	#body{
+		padding-bottom: 60px;
+	}
+  </style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<!--Navigation Bar-->
+			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				  </button>
+				  <a class="navbar-brand" href="index.html">Logo</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Buy/Sell</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="Settings.html">Settings</a></li>
+					<li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		</div>
+		<div id="body">
+			<div class="container body-content">
+				<div class="row">
+					<!-- left section -->
+					<div class="col-md-8">
+						<div class="page-header">
+						<h1><i class="fa fa-home"></i> Class Discussion Forum</h1>
+						</div>
+						<h4 class="plain-text" style="margin-top:24px;">
+							Select topics from the side to be able to access the forums for this class. 
+						</h4>
+					</div>
+
+					<!-- right section -->
+					<div class="col-md-4">
+						<!-- Featured panel -->
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h4>Topics</h4>
+							</div>
+							<div class="panel-body">
+								<div class="single category">
+									<ul class="list-unstyled">
+										<li><a href="discussiontopic.html" title="">General <span class="pull-right">13</span></a></li>
+										<li><a href="discussiontopic.html" title="">Assignments <span class="pull-right">13</span></a></li>
+										<li><a href="discussiontopic.html" title="">Quizzes <span class="pull-right">13</span></a></li>
+										<li><a href="discussiontopic.html" title="">Finals <span class="pull-right">13</span></a></li>
+										<li><a href="discussiontopic.html" title="">Interesting <span class="pull-right">13</span></a></li>
+										<li><a href="discussiontopic.html" title="">Alerts <span class="pull-right">13</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div> 			<!-- /right section -->
+				</div> 			<!-- /row -->
+			</div>		<!-- /container -->
+		</div>
+		<div id="footer">
+			<footer class="container-fluid text-center">Learnhub 2020</footer>
+		</div>
+	</div>
+</body>
+</html>

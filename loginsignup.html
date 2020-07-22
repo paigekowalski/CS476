@@ -1,16 +1,20 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
 <!DOCTYPE html>
-<html lang="en">
 
-	<title>Sign Up & Log In</title>
-
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
 	<head>
+		<html lang="en">
+		<meta charset="utf-8">
+
+		<title>Sign Up & Log In</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="loginsignup.js"> </script> 
 	</head>
+	
 	<body>
 	<div class="container-fluid">
 		<div class="container">
@@ -18,28 +22,35 @@
  			<hr>
 			<div class="row">
 				<div class="col-md-5">
- 					<form role="form" method="post" action="signup.php">
+ 					<form role="form" id="signup" method="post">
 						<fieldset>							
 							<p class="text-uppercase pull-center"> SIGN UP.</p>	
  							<div class="form-group">
+								<label id="signup_usname" class="err_msg"></label>
 								<input type="text" name="username" id="username" class="form-control input-lg" placeholder="Username">
 							</div>
  							<div class="form-group">
+								<label id="signup_fname" class="err_msg"></label>
 								<input type="text" name="first" id="first" class="form-control input-lg" placeholder="First Name">
 							</div>
 							<div class="form-group">
+								<label id="signup_lname" class="err_msg"></label>
 								<input type="text" name="last" id="last" class="form-control input-lg" placeholder="Last Name">
 							</div>
 							<div class="form-group">
+								<label id="signup_id" class="err_msg"></label>
 								<input type="text" name="ID" id="ID" class="form-control input-lg" placeholder="ID Number">
 							</div>
 							<div class="form-group">
+								<label id="signup_em" class="err_msg"></label>
 								<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address">
 							</div>
 							<div class="form-group">
+								<label id="signup_pss" class="err_msg"></label>
 								<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
 							</div>
 								<div class="form-group">
+								<label id="signup_cpss" class="err_msg"></label>
 								<input type="password" name="passwordconfirm" id="passwordconfirm" class="form-control input-lg" placeholder="Re-enter Password">
 							</div>
 							<div>
@@ -60,15 +71,17 @@
 				</div>
 				
 				<div class="col-md-5">
- 				 		<form role="form">
+ 				 		<form role="form" id="login" method="post">
 						<fieldset>							
 							<p class="text-uppercase"> Login using your account: </p>	
  								
 							<div class="form-group">
-								<input type="email" name="username" id="username" class="form-control input-lg" placeholder="username">
+								<label id="login_uname" class="err_msg"></label>
+								<input type="text" name="uname" id="uname" class="form-control input-lg" placeholder="username">
 							</div>
 							<div class="form-group">
-								<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
+								<label id="login_pss" class="err_msg"></label>
+								<input type="password" name="pass" id="pass" class="form-control input-lg" placeholder="Password">
 							</div>
 							<div>
 								<input type="submit" class="btn btn-md" value="Sign In">
@@ -79,9 +92,6 @@
 				</div>
 			</div>
 		</div>
-		<!--<p class="text-center">-->
-			<!--<small id="passwordHelpInline" class="text-muted"> Developer:<a href="http://www.psau.edu.ph/"> Pampanga state agricultural university ?</a> BS. Information and technology students @2017 Credits: <a href="https://v4-alpha.getbootstrap.com/">boostrap v4.</a></small>-->
-		<!--</p>-->
 	</div>
 	</body>
 	 

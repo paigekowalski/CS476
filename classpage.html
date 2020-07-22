@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Class Page</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>    
+    #footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+	  position: absolute;
+	  bottom: 0;
+	  width: 100%;
+	  height: 60px;
+    }
+	
+	/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+	
+	.sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+	
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#container{
+		min-height: 100%;
+		position: relative;
+	}
+	
+	#body{
+		padding-bottom: 60px;
+	}
+  </style>
+</head>
+
+<body>
+	<div id="container">
+		<!--Navigation Bar-->
+		<div id="header">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href="index.html">Logo</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Buy/Sell</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="Settings.html">Settings</a></li>
+							<li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div id="body">
+			<div class="container-fluid text-center">    
+				<div class="row content">
+					<div class="col-sm-2 sidenav">
+						<p><a href="classdiscussion.html">Discussion Forums</a></p>
+						<p><a href="Settings.html">Settings</a></p>
+					</div>
+					<div class="col-sm-8 text-left"> 
+						<h1>Class Information</h1>
+						<p>Time of Meeting: </p>
+						<p>Days of Meeting: </p>
+						<p>Description: </p>
+						<p>Other Important Information: </p>
+						<hr>
+						<h3>Notice: </h3>
+						<h4>Final on Wednesday</h4>
+					</div>
+					<div class="col-sm-2 sidenav">
+						<h3>Enrolled In Course</h3>
+						<p>Student1</p>
+						<p>Student2</p>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div id="footer">
+				<<footer class="container-fluid text-center" class="footer">Learnhub 2020</footer>
+			</div>
+	</div>
+</body>
+</html>

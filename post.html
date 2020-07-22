@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Post</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>    
+    #footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+	  position: absolute;
+	  bottom: 0;
+	  width: 100%;
+	  height: 60px;
+    }
+	
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#container{
+		min-height: 100%;
+		position: relative;
+	}
+	
+	#body{
+		padding-bottom: 80px;
+	}
+  </style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<!--Navigation Bar-->
+			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				  </button>
+				  <a class="navbar-brand" href="index.html">Logo</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Buy/Sell</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="Settings.html">Settings</a></li>
+					<li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		</div>
+		<div id="body">
+		  <div class="container">
+			<div class="row">
+
+			  <!-- Post Content Column -->
+			  <div class="col-lg-10">
+
+				<!-- Title -->
+				<h1 class="mt-4">Post Title</h1>
+
+				<hr>
+
+				<!-- Post Content -->
+				<p>Something, Something, something.</p>
+				<hr>
+
+				<!-- Comments Form -->
+				<div class="card my-4">
+				  <h5 class="card-header">Leave a Comment:</h5>
+				  <div class="card-body">
+					<form>
+					  <div class="form-group">
+						<textarea class="form-control" rows="3"></textarea>
+					  </div>
+					  <button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				  </div>
+				</div>
+
+				<!-- Single Comment -->
+				<div class="media mb-4">
+				  <div class="media-body">
+					<h5 class="mt-0">Commenter1</h5>
+						This is a comment. No one knows what to put here at the moment so we are just going to pretend that this is a very nice comment, detailing some very nice descriptions. Even if it is not, that is why this is all pretend. 
+				  </div>
+				</div>
+
+				<!-- Comment with nested comments -->
+				<div class="media mb-4">
+				  <div class="media-body">
+					<h5 class="mt-0">Commenter2</h5>
+					This is a comment. No one knows what to put here at the moment so we are just going to pretend that this is a very nice comment, detailing some very nice descriptions. Even if it is not, that is why this is all pretend. 
+
+					<div class="media mt-4">
+					  <div class="media-body">
+						<h5 class="mt-0">Commenter3</h5>
+						This is a comment. No one knows what to put here at the moment so we are just going to pretend that this is a very nice comment, detailing some very nice descriptions. Even if it is not, that is why this is all pretend. 
+					  </div>
+					</div>
+</div>
+</div>
+</div>
+			  <!-- Sidebar Widgets Column -->
+			  <div class="col-md-2">
+
+				<!-- Side Widget -->
+				<div class="card my-2">
+				  <h3 class="card-header">Information</h3>
+				  <div class="card-body">
+					<p>Posted On: </p>
+					<p>Posted By: </p>
+					<p>Class</p>
+				  </div>
+				</div>
+
+			  </div>
+
+			</div>
+			<!-- /.row -->
+
+		  </div>
+		  <!-- /.container -->
+		</div>
+		<div id="footer">
+			<footer class="container-fluid text-center">Learnhub 2020</footer>
+		</div>
+	</div>
+</body>
+</html>
